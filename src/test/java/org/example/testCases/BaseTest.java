@@ -1,7 +1,7 @@
 package org.example.testCases;
 
-import org.example.pageMethods.loginPage;
-import org.example.pageMethods.signUpPage;
+import org.example.pageMethods.LoginandSignUp.loginPage;
+import org.example.pageMethods.LoginandSignUp.signUpPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;

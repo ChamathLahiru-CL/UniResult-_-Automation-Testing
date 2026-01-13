@@ -1,4 +1,4 @@
-package org.example.pageMethods;
+package org.example.pageMethods.LoginandSignUp;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,7 +26,7 @@ public class signUpPage {
     private By password = By.id("password");
     private By confirmPassword = By.id("confirmPassword");
     private By agreeTerms = By.id("agreeTerms");
-    private By signUpButton = By.id("//button[@type='submit']//span[normalize-space()='Sign Up Now']");
+    private By signUpButton = By.xpath("//button[@type='submit']//span[normalize-space()='Sign Up Now']");
 
 
 //    Actions
@@ -36,13 +36,13 @@ public class signUpPage {
 //        driver.findElement(signUpLink).click();
     }
 
-    public void signUpInputValidDetails(String fullName, String userEmail, String enrollmentNo, String userPassword){
+    public void signUp(String fullName, String userEmail, String enrollmentNo, String userPassword, String confirmPW){
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(name)).sendKeys(fullName);
         driver.findElement(email).sendKeys(userEmail);
         driver.findElement(enrollment).sendKeys(enrollmentNo);
         driver.findElement(password).sendKeys(userPassword);
-        driver.findElement(confirmPassword).sendKeys(userPassword);
+        driver.findElement(confirmPassword).sendKeys(confirmPW);
         driver.findElement(agreeTerms).click();
 
     }
@@ -50,6 +50,28 @@ public class signUpPage {
     public void clickSignUpButton(){
         driver.findElement(signUpButton).click();
     }
+
+
+
+
+//    public void validateConfirmPassword(String fullName, String userEmail, String enrollmentNo, String userPassword){
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(name)).sendKeys(fullName);
+//        driver.findElement(email).sendKeys(userEmail);
+//        driver.findElement(enrollment).sendKeys(enrollmentNo);
+//        driver.findElement(password).sendKeys(userPassword);
+//        driver.findElement(agreeTerms).click();
+//    }
+//
+//    public void invalidConfirmPW(String fullName, String userEmail, String enrollmentNo, String userPassword, String confirmPW){
+//
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(name)).sendKeys(fullName);
+//        driver.findElement(email).sendKeys(userEmail);
+//        driver.findElement(enrollment).sendKeys(enrollmentNo);
+//        driver.findElement(password).sendKeys(userPassword);
+//        driver.findElement(confirmPassword).sendKeys(confirmPW);
+//        driver.findElement(agreeTerms).click();
+//
+//    }
 
 //        public void signUpInputValidDetails(String fullName, String email, String enrollmentNo, String password){
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(name)).sendKeys(fullName);
