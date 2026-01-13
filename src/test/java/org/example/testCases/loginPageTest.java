@@ -4,9 +4,7 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import org.testng.annotations.Test;
 
-/**
- * Unit test for simple App.
- */
+
 public class loginPageTest extends BaseTest {
 
     String username = "UWU/CST/22/001";
