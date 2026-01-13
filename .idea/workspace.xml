@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1ad4b7e-de75-4b9b-a0d2-28a1695e3992" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pageMethods/loginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pageMethods/loginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pageMethods/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/loginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/loginPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +40,16 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "TestNG.loginPageTest.forgotPassword.executor": "Run",
+    "TestNG.loginPageTest.testInvalidPassword.executor": "Run",
+    "TestNG.loginPageTest.testInvalidRole.executor": "Run",
+    "TestNG.loginPageTest.testInvalidUsername.executor": "Run",
+    "TestNG.loginPageTest.testSign.executor": "Run",
+    "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.loginPageTest.testSign">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="uniresult" />
       <method v="2">
@@ -53,6 +61,104 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="loginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UniResult" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.loginPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loginPageTest.forgotPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UniResult" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.loginPageTest" />
+      <option name="METHOD_NAME" value="forgotPassword" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loginPageTest.testInvalidPassword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UniResult" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.loginPageTest" />
+      <option name="METHOD_NAME" value="testInvalidPassword" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loginPageTest.testInvalidRole" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UniResult" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.loginPageTest" />
+      <option name="METHOD_NAME" value="testInvalidRole" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="loginPageTest.testSign" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="UniResult" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.loginPageTest" />
+      <option name="METHOD_NAME" value="testSign" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.loginPageTest.testSign" />
+        <item itemvalue="TestNG.loginPageTest" />
+        <item itemvalue="TestNG.loginPageTest.forgotPassword" />
+        <item itemvalue="TestNG.loginPageTest.testInvalidRole" />
+        <item itemvalue="TestNG.loginPageTest.testInvalidPassword" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
