@@ -17,7 +17,7 @@ public class loginPage
 
     public loginPage(WebDriver driver){
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(200));
     }
 
 //    Locators
@@ -36,6 +36,11 @@ public class loginPage
         driver.findElement(userPassword).sendKeys(password);
         Select select = new Select(driver.findElement(userRole));
         select.selectByValue(roleValue);
+
+//         Select role properly
+//        WebElement roleDropdown = driver.findElement(userRole);
+//        Select selectRole = new Select(roleDropdown);
+//        selectRole.selectByValue("student");
         driver.findElement(loginBtn).click();
     }
 
@@ -48,11 +53,12 @@ public class loginPage
         driver.findElement(loginBtn).click();
     }
 
-    public void forgotPassword(String username, String password, String roleValue){
+    public void forgotPassword(String username, String password, String roleValue) throws InterruptedException{
         driver.findElement(userName).sendKeys(username);
         driver.findElement(userPassword).sendKeys(password);
         Select select = new Select(driver.findElement(userRole));
         select.selectByValue(roleValue);
+        Thread.sleep(2000);
         driver.findElement(forgotButton).click();
     }
 
