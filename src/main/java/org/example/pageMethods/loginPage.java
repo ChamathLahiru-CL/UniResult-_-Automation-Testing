@@ -14,7 +14,7 @@ public class loginPage
         this.driver = driver;
     }
 
-    public void validLogin(WebDriver driver, String username, String password) throws InterruptedException{
+    public void validLogin(String username, String password) throws InterruptedException{
         driver.findElement(By.id("username")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         // Select role properly
@@ -24,7 +24,7 @@ public class loginPage
         driver.findElement(By.xpath("//button[@type='submit' and normalize-space()='Login Now']")).click();
     }
 
-    public void validLoginWithRM(WebDriver driver, String username, String password) throws InterruptedException{
+    public void validLoginWithRM(String username, String password) throws InterruptedException{
         driver.findElement(By.id("username")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         // Select role properly
@@ -35,7 +35,7 @@ public class loginPage
         driver.findElement(By.xpath("//button[@type='submit' and normalize-space()='Login Now']")).click();
     }
 
-    public void forgotPassword(WebDriver driver, String username, String password) throws InterruptedException{
+    public void forgotPassword(String username, String password) throws InterruptedException{
         driver.findElement(By.id("username")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         // Select role properly
@@ -45,7 +45,7 @@ public class loginPage
         driver.findElement(By.cssSelector("a[href='/forgot-password']")).click();
     }
 
-    public void invalidUsername(WebDriver driver, String username, String password) throws InterruptedException{
+    public void invalidUsername(String username, String password) throws InterruptedException{
         driver.findElement(By.id("username")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         // Select role properly
@@ -55,7 +55,7 @@ public class loginPage
         driver.findElement(By.xpath("//button[@type='submit' and normalize-space()='Login Now']")).click();
     }
 
-    public void invalidPassword(WebDriver driver, String username, String password) throws InterruptedException{
+    public void invalidPassword(String username, String password) throws InterruptedException{
         driver.findElement(By.id("username")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         // Select role properly
@@ -65,7 +65,7 @@ public class loginPage
         driver.findElement(By.xpath("//button[@type='submit' and normalize-space()='Login Now']")).click();
     }
 
-    public void withoutUsername(WebDriver driver,  String password) throws InterruptedException{
+    public void withoutUsername(String password) throws InterruptedException{
         driver.findElement(By.id("password")).sendKeys(password);
         // Select role properly
         WebElement roleDropdown = driver.findElement(By.id("role"));
@@ -74,7 +74,7 @@ public class loginPage
         driver.findElement(By.xpath("//button[@type='submit' and normalize-space()='Login Now']")).click();
     }
 
-    public void withoutPassword(WebDriver driver, String username, String password) throws InterruptedException{
+    public void withoutPassword(String username, String password) throws InterruptedException{
         driver.findElement(By.id("username")).sendKeys(username);
         // Select role properly
         WebElement roleDropdown = driver.findElement(By.id("role"));
@@ -83,11 +83,11 @@ public class loginPage
         driver.findElement(By.xpath("//button[@type='submit' and normalize-space()='Login Now']")).click();
     }
 
-    public void continueWithGoogle(WebDriver driver){
+    public void continueWithGoogle(){
         driver.findElement(By.xpath("//button[.//span[normalize-space()='Continue with Google']]")).click();
     }
 
-    public void signUpPage(WebDriver driver){
+    public void signUpPage(){
         driver.findElement(By.cssSelector("a[href='/signup']")).click();
     }
 
